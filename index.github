@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人自我介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e8f0fe;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #3498db;
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .info-section {
+            text-align: left;
+            margin: 30px 0;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .info-item span {
+            font-weight: 600;
+            color: #2c3e50;
+            width: 120px;
+            display: inline-block;
+        }
+        .intro-text {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #e8f0fe;
+            border-radius: 50%;
+            line-height: 40px;
+            color: #3498db;
+            margin: 0 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .social-links a:hover {
+            background: #3498db;
+            color: white;
+        }
+        /* 响应式适配 */
+        @media (max-width: 600px) {
+            .profile-card {
+                padding: 25px;
+            }
+            .avatar {
+                width: 140px;
+                height: 140px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .info-item span {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- 头像区域 -->
+            <img src="IMG-20250420-WA0023.jpg" alt="个人头像" class="avatar" onerror="this.src='https://via.placeholder.com/180';this.alt='默认头像'">
+            
+            <!-- 基本信息 -->
+            <h1>你的名字</h1>
+            <div class="title">你的职业/身份（如：产品设计师 | 前端开发工程师）</div>
+            
+            <!-- 个人简介 -->
+            <p class="intro-text">
+                你好！我是一名[职业领域]从业者，拥有[X年]相关经验，擅长[核心技能1]、[核心技能2]和[核心技能3]。
+                热爱[兴趣方向，如：技术探索/创意设计/用户体验优化]，始终保持对新鲜事物的好奇心，
+                希望通过专业能力为[目标领域，如：产品创新/项目落地/团队成长]贡献价值。
+            </p>
+            
+            <!-- 详细信息 -->
+            <div class="info-section">
+                <div class="info-item"><span>所在城市：</span>你的城市</div>
+                <div class="info-item"><span>联系邮箱：</span>your-email@example.com</div>
+                <div class="info-item"><span>核心技能：</span>[技能1]、[技能2]、[技能3]</div>
+                <div class="info-item"><span>兴趣爱好：</span>[爱好1]、[爱好2]、[爱好3]</div>
+            </div>
+            
+            <!-- 社交链接（可替换为自己的链接） -->
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" title="GitHub">G</a>
+                <a href="https://linkedin.com/" target="_blank" title="LinkedIn">L</a>
+                <a href="https://weixin.qq.com/" target="_blank" title="微信">W</a>
+                <a href="https://blog.example.com/" target="_blank" title="博客">B</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
