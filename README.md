@@ -4,44 +4,29 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>cz6380162 的个人网页</title>
+  <title>Gaojun的写真图</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1e90ff, #00bfff);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background-color: #1e90ff;
       color: white;
-      font-family: "Segoe UI", Arial, sans-serif;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 50px;
     }
     img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid white;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-      margin-bottom: 20px;
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
     h1 {
+      margin-top: 20px;
       font-size: 28px;
-      letter-spacing: 1px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-    }
-    footer {
-      position: absolute;
-      bottom: 15px;
-      font-size: 14px;
-      color: rgba(255,255,255,0.8);
     }
   </style>
 </head>
 <body>
-  <img src="IMG-20250420-WA0023.jpg" alt="头像">
-  <h1>cz6380162</h1>
-  <footer>© 2025 cz6380162</footer>
+  <img src="IMG-20250420-WA0023.jpg" alt="Gaojun的写真图">
+  <h1>Gaojun的写真图</h1>
 </body>
 </html>
