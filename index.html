@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaojun 猪肉商店</title>
+  <style>
+    :root{
+      --bg: #1e90ff;
+      --card-bg: rgba(255,255,255,0.06);
+      --glass: rgba(0,0,0,0.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg,var(--bg),#0f78d1);
+      color:#fff;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .container{
+      width:100%;
+      max-width:420px;
+      background:var(--card-bg);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+      backdrop-filter: blur(6px);
+    }
+    header{
+      text-align:center;
+      margin-bottom:12px;
+    }
+    header h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:0.6px;
+    }
+    header p{margin:6px 0 0 0;font-size:12px;opacity:0.9}/* product list - vertical */
+.products{display:flex;flex-direction:column;gap:16px;margin-top:12px}
+.product{
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  background:#fff;
+}
+.product img{
+  display:block;
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  filter:contrast(1.02) saturate(1.05);
+  transform-origin:center;
+  transition:transform .35s ease;
+}
+.product:hover img{transform:scale(1.03)}
+
+/* price badge - only thing visible as text */
+.price-badge{
+  position:absolute;
+  left:12px;
+  bottom:12px;
+  padding:10px 14px;
+  background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));
+  color:#fff;
+  font-weight:700;
+  border-radius:10px;
+  font-size:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+}
+
+/* small helper for accessibility (visually hidden) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media (max-width:480px){
+  .product img{height:260px}
+  .price-badge{font-size:16px;padding:8px 12px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gaojun 猪肉商店</h1>
+      <p>（仅显示价格）</p>
+    </header><main class="products" aria-label="商品列表">
+  <!-- 顺序按你要求的文件：IMG-20250420-WA0028, IMG-20250420-WA0027, IMG-20250420-WA0023.jpg -->
+
+  <figure class="product">
+    <img src="IMG-20250420-WA0028.jpg" alt="商品图片 1">
+    <figcaption class="price-badge">RM 20.50 /kg</figcaption>
+  </figure>
+
+  <figure class="product">
+    <img src="IMG-20250420-WA0027.jpg" alt="商品图片 2">
+    <figcaption class="price-badge">RM 18.90 /kg</figcaption>
+  </figure>
+
+  <figure class="product">
+    <img src="IMG-20250420-WA0023.jpg" alt="商品图片 3">
+    <figcaption class="price-badge">RM 16.80 /kg</figcaption>
+  </figure>
+
+</main>
+
+<span class="sr-only">页面仅显示三张商品图片与对应价格</span>
+
+  </div>
+</body>
+  </html>
